@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EntrenaConDaniel - Accesorios Deportivos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      margin: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #27ae60;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      width: 260px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: 0 auto 50px;
+    }
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+    form button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #219150;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9em;
+    }
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      color: #27ae60;
+    }
+    /* Placeholder for logo */
+    .logo {
+      max-width: 150px;
+      margin: 0 auto 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Aquí puedes poner el logo de tu negocio, cambia la ruta 'logo.png' por la de tu imagen -->
+    <img src="logo.png" alt="EntrenaConDaniel Logo" class="logo" />
+    <h1>EntrenaConDaniel</h1>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="bienvenida">
+      <h2>Bienvenido a EntrenaConDaniel</h2>
+      <p>Tu tienda online de accesorios deportivos para entrenar en casa o en el gimnasio con calidad y estilo. 
+         Bandas de resistencia, guantes, botellas deportivas y más para potenciar tu rendimiento.</p>
+    </section>
+
+    <section id="productos">
+      <h2>Productos Destacados</h2>
+      <div class="products">
+        <div class="product">
+          <img src="https://ae01.alicdn.com/kf/Hf3c1821953e74498bf14051b5beef6f9k.jpg" alt="Bandas de Resistencia" />
+          <h3>Bandas de Resistencia</h3>
+          <p>Perfectas para todos los niveles de entrenamiento.</p>
+          <p><strong>Precio:</strong> $8.000 CLP</p>
+        </div>
+        <div class="product">
+          <img src="https://ae01.alicdn.com/kf/Hf27f02af08bc44f3a42e7025b76cc9b6O.jpg" alt="Guantes de Gimnasio" />
+          <h3>Guantes de Gimnasio</h3>
+          <p>Máximo agarre y comodidad para tus entrenamientos.</p>
+          <p><strong>Precio:</strong> $6.500 CLP</p>
+        </div>
+        <div class="product">
+          <img src="https://ae01.alicdn.com/kf/H1e4e0f491e9c4d18991e9b69834f24eeI.jpg" alt="Botella Deportiva" />
+          <h3>Botella Deportiva</h3>
+          <p>Reutilizable, con diseño moderno y filtro incorporado.</p>
+          <p><strong>Precio:</strong> $5.000 CLP</p>
+        </div>
+        <div class="product">
+          <img src="https://ae01.alicdn.com/kf/Hd597e772ec6c49f8bd0c60d65e1ecf7bL.jpg" alt="Muñequeras Deportivas" />
+          <h3>Muñequeras Deportivas</h3>
+          <p>Soporte cómodo y resistente para tus entrenamientos.</p>
+          <p><strong>Precio:</strong> $4.000 CLP</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" style="margin-top:40px;">
+      <h2>Contacto</h2>
+      <p>¿Quieres hacer un pedido o tienes preguntas? Escríbeme aquí:</p>
+      <form action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p>O contáctanos por Instagram o WhatsApp:</p>
+      <ul>
+        <li>Instagram: <a href="https://instagram.com/EntrenaConDaniel" target="_blank">@EntrenaConDaniel</a></li>
+        <li>WhatsApp: <a href="https://wa.me/56912345678" target="_blank">+56 9 1234 5678</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>Síguenos en redes sociales</p>
+    <div class="social-links">
+      <a href="https://instagram.com/EntrenaConDaniel" target="_blank" aria-label="Instagram">📸</a>
+      <a href="https://facebook.com/EntrenaConDaniel" target="_blank" aria-label="Facebook">📘</a>
+      <a href="https://wa.me/56912345678" target="_blank" aria-label="WhatsApp">📱</a>
+    </div>
+    <p>© 2025 EntrenaConDaniel - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
